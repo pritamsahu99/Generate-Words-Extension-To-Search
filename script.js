@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   async function generateRandomWord(callback) {
-    const apiUrl = `https://wordsapiv1.p.mashape.com/words/${randomWord}`; // Replace with the actual API endpoint
+    const apiUrl = `https://random-word-api.herokuapp.com/${randomWord}`; // Replace with the actual API endpoint
     try {
       const response = await fetch(apiUrl);
       const data = await response.json();
