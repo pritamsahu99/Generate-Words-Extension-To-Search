@@ -35,11 +35,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   async function generateRandomWord(callback) {
-    const apiUrl = 'https://random-word-api.herokuapp.com/all';
+    const url = 'https://random-word-by-api-ninjas.p.rapidapi.com/v1/randomword?type=verb';
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '803abccaf4msh0cd3dec355642d5p1282bdjsnbe14ce508bf1',
+        'X-RapidAPI-Host': 'random-word-by-api-ninjas.p.rapidapi.com'
+      }
+    };
+
     try {
-      const response = await fetch(apiUrl);
-      const data = await response.json();
-      const randomWord = data[Math.floor(Math.random() * data.length)];
+      const response = await fetch(url, options);
+      const result = await response.json();
+      const randomWord = result[0].word;
       callback(randomWord);
     } catch (error) {
       console.error('Error fetching random word:', error);
