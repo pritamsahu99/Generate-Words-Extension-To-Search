@@ -50,9 +50,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function getRandomWord() {
-    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-    const availableWords = generateCombinations(alphabet.split(''), 3) // Change 3 to the desired word length
-                            .filter(word => !usedWords.includes(word));
+    // const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    const meaningfulCombinations = [
+      'sky', 'down', 'science', 'random', 'coding', 'javascript', 'gpt', 'extension', 'meaningful'
+      // Add more meaningful combinations as needed
+    ];
+    const availableWords = meaningfulCombinations.filter(word => !usedWords.includes(word));
+
+    // const availableWords = generateCombinations(alphabet.split(''), 3) 
+    //                         .filter(word => !usedWords.includes(word));
 
     if (availableWords.length === 0) {
       return null; // Signal that all words have been used
