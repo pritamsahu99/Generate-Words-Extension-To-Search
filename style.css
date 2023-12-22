@@ -1,0 +1,70 @@
+/* 
+// document.addEventListener('DOMContentLoaded', function () {
+    //   const randomWordElement = document.getElementById('random-word');
+    //   let usedWords = [];
+    //   let searchTabId;
+    
+    //   randomWordElement.addEventListener('click', function () {
+    //     const numberOfSearches = prompt('Enter the number of searches:');
+    //     if (numberOfSearches && !isNaN(numberOfSearches)) {
+    //       chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    //         if (tabs.length > 0) {
+    //           searchTabId = tabs[0].id;
+    //           performAutomaticSearches(parseInt(numberOfSearches, 10));
+    //         }
+    //       });
+    //     }
+    //   });
+    
+    //   function performAutomaticSearches(numberOfSearches) {
+    //     for (let i = 0; i < numberOfSearches; i++) {
+    //       generateRandomWord();
+    //     }
+    //   }
+    
+    //   function generateRandomWord() {
+    //     const randomWord = getRandomWord();
+        
+    //     if (randomWord) {
+    //       usedWords.push(randomWord);
+    //       searchGoogle(randomWord);
+    //     } else {
+    //       // All words have been used, reset the list
+    //       usedWords = [];
+    //       alert('All words have been used. Resetting the list.');
+    //     }
+    //   }
+    
+    //   function getRandomWord() {
+    //     const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    //     const availableWords = generateCombinations(alphabet.split(''), 3) // Change 3 to the desired word length
+    //                             .filter(word => !usedWords.includes(word));
+    
+    //     if (availableWords.length === 0) {
+    //       return null; // Signal that all words have been used
+    //     }
+    
+    //     const randomIndex = Math.floor(Math.random() * availableWords.length);
+    //     return availableWords[randomIndex];
+    //   }
+    
+    //   function generateCombinations(letters, length) {
+    //     const combinations = [];
+    //     const generate = (prefix, remainingLength) => {
+    //       if (remainingLength === 0) {
+    //         combinations.push(prefix.join(''));
+    //         return;
+    //       }
+    //       for (const letter of letters) {
+    //         generate(prefix.concat(letter), remainingLength - 1);
+    //       }
+    //     };
+    //     generate([], length);
+    //     return combinations;
+    //   }
+    
+    //   function searchGoogle(query) {
+    //     chrome.tabs.update(searchTabId, { url: `https://www.google.com/search?q=${encodeURIComponent(query)}` });
+    //   }
+    // });
+     */
