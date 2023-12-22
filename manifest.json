@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Random Words Search",
+    "name": "ExploreWords Hub",
     "version": "1.0",
     "description": "Generate random meaningful words for search.",
     "permissions": ["activeTab"],
