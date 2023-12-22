@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
   async function searchGoogle(query) {
     return new Promise(resolve => {
       chrome.tabs.update(currentTabId, { url: `https://www.google.com/search?q=${encodeURIComponent(query)}` }, function () {
-        setTimeout(resolve, 4000);
+        setTimeout(resolve, 1000);
       });
     });
   }
