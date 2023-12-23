@@ -6,16 +6,6 @@
     "permissions": ["activeTab"],
     "action": {
       "default_popup": "index.html"
-    },
-    "applications": {
-      "gecko": {
-        "id": "random-search-words@yourdomain.com"
-      }
-    },
-    "browser": {
-      "edge": {
-        "id": "random-search-words@yourdomain.com"
-      }
     }
-}
+  }
   

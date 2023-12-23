@@ -699,7 +699,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function searchGoogle(query, callback) {
     chrome.tabs.update(
       currentTabId,
-      { url: `https://www.google.com/search?q=${encodeURIComponent(query)}` },
+      { url: `https://www.bing.com/search?q=${encodeURIComponent(query)}` },
       function () {
         setTimeout(callback, 2000);
       }
