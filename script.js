@@ -701,7 +701,7 @@ document.addEventListener("DOMContentLoaded", function () {
       currentTabId,
       { url: `https://www.bing.com/search?q=${encodeURIComponent(query)}` },
       function () {
-        setTimeout(callback, 3000);
+        setTimeout(callback, 5000);
       }
     );
   }
